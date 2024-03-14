@@ -1,0 +1,162 @@
+﻿@model AppUserRegisterDTO
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+<head>
+
+    <title>Easy Cash | Yeni Kullanıcı Kaydı</title>
+
+    <!-- Meta-Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Existing Login Form Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //Meta-Tags -->
+
+    <link href="~/RegisterPage/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="~/RegisterPage/css/style.css" type="text/css" media="all">
+
+    <!-- Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <!-- //Fonts -->
+
+</head>
+<!-- //Head -->
+<!-- Body -->
+<body>
+
+    <h1>EASY CASH KAYIT FORMU</h1>
+
+    <div class="w3layoutscontaineragileits">
+        <h2>Login here</h2>
+        <form method="post">
+            <input type="text" asp-for="Name" placeholder="Adınız..." required="">
+            <input type="text" asp-for="Surname" placeholder="Soyadınız..." required="">
+            <input type="text" asp-for="Username" placeholder="Kullanıcı Adınız..." required="">
+            <input type="email" asp-for="Email" placeholder="Email Adresiniz..." required="">
+            <input type="password" asp-for="Password" placeholder="Şifreniz..." required="">
+            <input type="password" asp-for="ConfirmPassword" placeholder="Şifrenizi Tekrar Giriniz..." required="">
+            <div class="text-white" style="text-align:left; margin-left:1rem;" asp-validation-summary="ModelOnly"></div>
+            <ul class="agileinfotickwthree" style="margin-top:2rem;">
+                <li>
+                    <input type="checkbox" id="brand1" value="">
+                    <label for="brand1"><span style="margin-top:10px;"></span>Şartları & Koşulları </br> Kabul Ediyorum</label>
+                    <a class="w3_play_icon1" href="#small-dialog1"> Şartlar & Koşullar</a></p>
+                </li>
+            </ul>
+            <div class="aitssendbuttonw3ls">
+                <input type="submit" value="LOGIN">
+                <p> Zaten bir hesabınız var mı? <span>→</span> <a class="w3_play_icon1" href="/Login/Index/"> GİRİŞ YAP</a></p>
+                <div class="clear"></div>
+            </div>
+        </form>
+    </div>
+
+    <!-- for register popup -->
+    <div id="small-dialog1" class="mfp-hide">
+        <div class="contact-form1">
+            <div class="contact-w3-agileits">
+                <div class="box content">
+                    <h2 id="gizlilik-politikasi">Gizlilik Politikası</h2>
+                    <p>Son güncellenme: 14/03/2024</p>
+                    <p>
+                        Güvenliğiniz bizim için önemli. Bu sebeple bizimle paylaşacağınız kişisel verileriz hassasiyetle korunmaktadır.
+                    </p>
+                    <p>
+                        Biz, Şirket Adı, veri sorumlusu olarak, bu gizlilik ve kişisel verilerin korunması politikası ile,
+                        hangi kişisel verilerinizin hangi amaçla işleneceği, işlenen verilerin kimlerle ve neden paylaşılabileceği,
+                        veri işleme yöntemimiz ve hukuki sebeplerimiz ile; işlenen verilerinize ilişkin haklarınızın neler olduğu
+                        hususunda sizleri aydınlatmayı amaçlıyoruz.
+                    </p>
+                    <h2 id="toplanan-kisisel-verileriniz-toplanma-yoentemi-ve-hukuki-sebebi">Toplanan Kişisel Verileriniz, Toplanma Yöntemi ve Hukuki Sebebi</h2>
+                    <p>
+                        IP adresiniz ve kullanıcı aracısı bilgileriniz, sadece analiz yapmak amacıyla ve çerezler (cookies) vb.
+                        teknolojiler vasıtasıyla, otomatik veya otomatik olmayan yöntemlerle ve bazen de analitik sağlayıcılar,
+                        reklam ağları, arama bilgi sağlayıcıları, teknoloji sağlayıcıları gibi üçüncü taraflardan elde edilerek,
+                        kaydedilerek, depolanarak ve güncellenerek, aramızdaki hizmet ve sözleşme ilişkisi çerçevesinde ve süresince,
+                        meşru menfaat işleme şartına dayanılarak işlenecektir.
+                    </p>
+                    <h2 id="kisisel-verilerinizin-islenme-amaci">Kişisel Verilerinizin İşlenme Amacı</h2>
+                    <p>
+                        Bizimle paylaştığınız kişisel verileriniz sadece analiz yapmak suretiyle; sunduğumuz hizmetlerin
+                        gerekliliklerini en iyi şekilde yerine getirebilmek, bu hizmetlere sizin tarafınızdan ulaşılabilmesini
+                        ve maksimum düzeyde faydalanılabilmesini sağlamak, hizmetlerimizi, ihtiyaçlarınız doğrultusunda
+                        geliştirebilmek ve sizleri daha geniş kapsamlı hizmet sağlayıcıları ile yasal çerçeveler içerisinde
+                        buluşturabilmek ve kanundan doğan zorunlulukların (kişisel verilerin talep halinde adli ve idari makamlarla paylaşılması)
+                        yerine getirilebilmesi amacıyla, sözleşme ve hizmet süresince, amacına uygun ve ölçülü bir şekilde
+                        işlenecek ve güncellenecektir.
+                    </p>
+                    <h2 id="toplanan-kisisel-verilerin-kimlere-ve-hangi-amaclarla-aktarilabilecegi">Toplanan Kişisel Verilerin Kimlere ve Hangi Amaçlarla Aktarılabileceği</h2>
+                    <p>
+                        Bizimle paylaştığınız kişisel verileriniz; faaliyetlerimizi yürütmek üzere hizmet aldığımız ve/veya
+                        verdiğimiz, sözleşmesel ilişki içerisinde bulunduğumuz, iş birliği yaptığımız, yurt içi ve yurt dışındaki
+                        3. şahıslar ile kurum ve kuruluşlara ve talep halinde adli ve idari makamlara, gerekli teknik ve idari
+                        önlemler alınması koşulu ile aktarılabilecektir.
+                    </p>
+                    <h2 id="kisisel-verileri-islenen-kisi-olarak-haklariniz">Kişisel Verileri İşlenen Kişi Olarak Haklarınız</h2>
+                    <p>KVKK madde 11 uyarınca herkes, veri sorumlusuna başvurarak aşağıdaki haklarını kullanabilir:</p>
+                    <ol type="a">
+                        <li>Kişisel veri işlenip işlenmediğini öğrenme,</li>
+                        <li>Kişisel verileri işlenmişse buna ilişkin bilgi talep etme,</li>
+                        <li>Kişisel verilerin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
+                        <li>Yurt içinde veya yurt dışında kişisel verilerin aktarıldığı üçüncü kişileri bilme,</li>
+                        <li>Kişisel verilerin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme,</li>
+                        <li>Kişisel verilerin silinmesini veya yok edilmesini isteme,</li>
+                        <li>(e) ve (f) bentleri uyarınca yapılan işlemlerin, kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,</li>
+                        <li>İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kişinin kendisi aleyhine bir sonucun ortaya çıkmasına itiraz etme,</li>
+                        <li>Kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğraması hâlinde zararın giderilmesini talep etme, haklarına sahiptir.</li>
+                    </ol>
+                    <p>Yukarıda sayılan haklarınızı kullanmak üzere email@site.com üzerinden bizimle iletişime geçebilirsiniz.</p>
+                    <h2 id="iletisim">İletişim</h2>
+                    <p>
+                        Sizlere hizmet sunabilmek amaçlı analizler yapabilmek için, sadece gerekli olan kişisel verilerinizin,
+                        işbu gizlilik ve kişisel verilerin işlenmesi politikası uyarınca işlenmesini, kabul edip etmemek hususunda
+                        tamamen özgürsünüz. Siteyi kullanmaya devam ettiğiniz takdirde kabul etmiş olduğunuz tarafımızca
+                        varsayılacak olup, daha ayrıntılı bilgi için bizimle email@site.com e-mail adresi üzerinden iletişime
+                        geçmekten lütfen çekinmeyiniz.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //for register popup -->
+
+    <div class="w3footeragile">
+        <p> &copy; @DateTime.Now.Year Easy Cash Kayıt Formu. Tüm Hakları Saklıdır | Design by Ömür Selçuk SAYIN</p>
+    </div>
+
+
+    <script type="text/javascript" src="~/RegisterPage/js/jquery-2.1.4.min.js"></script>
+
+    <!-- pop-up-box-js-file -->
+    <script src="~/RegisterPage/js/jquery.magnific-popup.js" type="text/javascript"></script>
+    <!--//pop-up-box-js-file -->
+    <script>
+        $(document).ready(function () {
+            $('.w3_play_icon,.w3_play_icon1,.w3_play_icon2').magnificPopup({
+                type: 'inline',
+                fixedContentPos: false,
+                fixedBgPos: true,
+                overflowY: 'auto',
+                closeBtnInside: true,
+                preloader: false,
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
+
+        });
+    </script>
+
+</body>
+<!-- //Body -->
+
+</html>
